@@ -93,7 +93,8 @@ public sealed partial class CriminalRecordsConsoleSystem : SharedCriminalRecords
         if (msg.Status == SecurityStatus.Wanted != (msg.Reason != null) &&
             msg.Status == SecurityStatus.Suspected != (msg.Reason != null) &&
             msg.Status == SecurityStatus.Search != (msg.Reason != null) && // Goob
-            msg.Status == SecurityStatus.Hostile != (msg.Reason != null))
+            msg.Status == SecurityStatus.Hostile != (msg.Reason != null) &&
+            msg.Status == SecurityStatus.Brutalize != (msg.Reason != null)) // Trauma
             return;
 
         if (!CheckSelected(ent, msg.Actor, out var mob, out var key))
@@ -167,6 +168,9 @@ public sealed partial class CriminalRecordsConsoleSystem : SharedCriminalRecords
             (_, SecurityStatus.Perma) => "perma",
             // person needs to be searched
             (_, SecurityStatus.Search) => "search",
+            // <Trauma>
+            // Person should be beaten non-lethally
+            (_, SecurityStatus.Brutalize) => "brutalize",
             // </Goob>
             (SecurityStatus.Hostile, SecurityStatus.None) => "not-hostile",
             (SecurityStatus.Eliminated, SecurityStatus.None) => "not-eliminated",
@@ -185,6 +189,9 @@ public sealed partial class CriminalRecordsConsoleSystem : SharedCriminalRecords
             (SecurityStatus.Search, SecurityStatus.None) => "not-search",
             // </Goob>
             // this is impossible
+            // <Trauma>
+            // ass sufficiently kicked
+            (SecurityStatus.Brutalize, SecurityStatus.None) => "not-brutalize",
             _ => "not-wanted"
         };
         _radio.SendRadioMessage(ent,

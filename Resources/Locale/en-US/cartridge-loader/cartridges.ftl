@@ -111,6 +111,9 @@ wanted-list-status-label = [color=darkgray]status:[/color] {$status ->
         [discharged] [color=green]discharged[/color]
         [hostile] [color=darkred]hostile[/color]
         [eliminated] [color=gray]eliminated[/color]
+        [search] [color=#008080]search[/color]
+        [perma] [color=#b18644]perma[/color]
+        [brutalize] [color=orange]brutalize[/color]
         *[other] none
     }
 
