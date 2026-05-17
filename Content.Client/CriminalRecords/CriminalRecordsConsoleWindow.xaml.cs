@@ -274,7 +274,7 @@ public sealed partial class CriminalRecordsConsoleWindow : FancyWindow
     {
         if (status == SecurityStatus.Wanted || status == SecurityStatus.Suspected || status == SecurityStatus.Hostile ||
             status == SecurityStatus.Search || // Goob
-            status == SecurityStatus.Brutalize) // <Trauma>
+            status == SecurityStatus.Brutalize) // Trauma
         {
             GetReason(status);
             return;

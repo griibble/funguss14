@@ -94,7 +94,7 @@ public sealed partial class CriminalRecordsConsoleSystem : SharedCriminalRecords
             msg.Status == SecurityStatus.Suspected != (msg.Reason != null) &&
             msg.Status == SecurityStatus.Search != (msg.Reason != null) && // Goob
             msg.Status == SecurityStatus.Hostile != (msg.Reason != null) &&
-            msg.Status == SecurityStatus.Brutalize != (msg.Reason != null)) // <Trauma>
+            msg.Status == SecurityStatus.Brutalize != (msg.Reason != null)) // Trauma
             return;
 
         if (!CheckSelected(ent, msg.Actor, out var mob, out var key))

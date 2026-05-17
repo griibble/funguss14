@@ -48,10 +48,9 @@ public abstract class SharedCriminalRecordsSystem : EntitySystem
             // <Goob>
             SecurityStatus.Perma => "SecurityIconPerma",
             SecurityStatus.Search => "SecurityIconSearch",
-            // </Goob>
+            // <Trauma>
             SecurityStatus.Hostile => "SecurityIconHostile",
             SecurityStatus.Eliminated => "SecurityIconEliminated",
-            // <Trauma>
             SecurityStatus.Brutalize => "SecurityIconBrutalize",
             _ => record.StatusIcon
         };
