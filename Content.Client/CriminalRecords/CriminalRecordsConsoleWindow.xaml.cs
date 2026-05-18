@@ -320,14 +320,13 @@ public sealed partial class CriminalRecordsConsoleWindow : FancyWindow
             SecurityStatus.Detained => "hud_incarcerated",
             SecurityStatus.Discharged => "hud_discharged",
             SecurityStatus.Suspected => "hud_suspected",
-            // <Goob>
-            SecurityStatus.Search => "hud_search",
-            SecurityStatus.Perma => "hud_perma",
-            // </Goob>
-            SecurityStatus.Hostile => "hud_hostile",
-            SecurityStatus.Eliminated => "hud_eliminated",
             // <Trauma>
             SecurityStatus.Brutalize => "hud_brutalize",
+            SecurityStatus.Search => "hud_search",
+            SecurityStatus.Perma => "hud_perma",
+            SecurityStatus.Hostile => "hud_hostile",
+            SecurityStatus.Eliminated => "hud_eliminated",
+            // </Trauma>
             _ => "SecurityIconNone"
         };
     }

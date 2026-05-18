@@ -163,17 +163,16 @@ public sealed partial class CriminalRecordsConsoleSystem : SharedCriminalRecords
             (_, SecurityStatus.Discharged) => "released",
             // going from any other state to wanted, AOS or prisonbreak / lazy secoff never set them to released and they reoffended
             (_, SecurityStatus.Wanted) => "wanted",
-            // <Goob>
+            // <Trauma>
             // person has been sentenced to perma
             (_, SecurityStatus.Perma) => "perma",
             // person needs to be searched
             (_, SecurityStatus.Search) => "search",
-            // <Trauma>
             // Person should be beaten non-lethally
             (_, SecurityStatus.Brutalize) => "brutalize",
-            // </Goob>
             (SecurityStatus.Hostile, SecurityStatus.None) => "not-hostile",
             (SecurityStatus.Eliminated, SecurityStatus.None) => "not-eliminated",
+            // </Trauma>
             // person is no longer sus
             (SecurityStatus.Suspected, SecurityStatus.None) => "not-suspected",
             // going from wanted to none, must have been a mistake
@@ -182,16 +181,14 @@ public sealed partial class CriminalRecordsConsoleSystem : SharedCriminalRecords
             (SecurityStatus.Detained, SecurityStatus.None) => "released",
             // criminal is no longer on parole
             (SecurityStatus.Paroled, SecurityStatus.None) => "not-parole",
-            // <Goob>
+            // <Trauma>
             // criminal is no longer in perma
             (SecurityStatus.Perma, SecurityStatus.None) => "not-perma",
             // person no longer needs to be searched
             (SecurityStatus.Search, SecurityStatus.None) => "not-search",
-            // </Goob>
-            // this is impossible
-            // <Trauma>
             // ass sufficiently kicked
             (SecurityStatus.Brutalize, SecurityStatus.None) => "not-brutalize",
+            // </Trauma>
             _ => "not-wanted"
         };
         _radio.SendRadioMessage(ent,
