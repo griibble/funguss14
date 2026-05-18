@@ -93,8 +93,8 @@ public sealed partial class CriminalRecordsConsoleSystem : SharedCriminalRecords
         if (msg.Status == SecurityStatus.Wanted != (msg.Reason != null) &&
             msg.Status == SecurityStatus.Suspected != (msg.Reason != null) &&
             msg.Status == SecurityStatus.Search != (msg.Reason != null) && // Goob
-            msg.Status == SecurityStatus.Hostile != (msg.Reason != null) &&
-            msg.Status == SecurityStatus.Brutalize != (msg.Reason != null)) // Trauma
+            msg.Status == SecurityStatus.Brutalize != (msg.Reason != null) && // Trauma
+            msg.Status == SecurityStatus.Hostile != (msg.Reason != null))
             return;
 
         if (!CheckSelected(ent, msg.Actor, out var mob, out var key))
@@ -182,13 +182,14 @@ public sealed partial class CriminalRecordsConsoleSystem : SharedCriminalRecords
             // criminal is no longer on parole
             (SecurityStatus.Paroled, SecurityStatus.None) => "not-parole",
             // <Trauma>
+            // ass sufficiently kicked
+            (SecurityStatus.Brutalize, SecurityStatus.None) => "not-brutalize",
             // criminal is no longer in perma
             (SecurityStatus.Perma, SecurityStatus.None) => "not-perma",
             // person no longer needs to be searched
             (SecurityStatus.Search, SecurityStatus.None) => "not-search",
-            // ass sufficiently kicked
-            (SecurityStatus.Brutalize, SecurityStatus.None) => "not-brutalize",
             // </Trauma>
+            // this is impossible
             _ => "not-wanted"
         };
         _radio.SendRadioMessage(ent,

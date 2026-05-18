@@ -44,14 +44,14 @@ public abstract class SharedCriminalRecordsSystem : EntitySystem
             SecurityStatus.Perma => "SecurityIconPerma",
             SecurityStatus.Search => "SecurityIconSearch",
             SecurityStatus.Brutalize => "SecurityIconBrutalize",
-            SecurityStatus.Hostile => "SecurityIconHostile",
-            SecurityStatus.Eliminated => "SecurityIconEliminated",
             // </Trauma>
             SecurityStatus.Paroled => "SecurityIconParoled",
             SecurityStatus.Wanted => "SecurityIconWanted",
             SecurityStatus.Detained => "SecurityIconIncarcerated",
             SecurityStatus.Discharged => "SecurityIconDischarged",
             SecurityStatus.Suspected => "SecurityIconSuspected",
+            SecurityStatus.Hostile => "SecurityIconHostile",
+            SecurityStatus.Eliminated => "SecurityIconEliminated",
             _ => record.StatusIcon
         };
 

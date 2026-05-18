@@ -24,11 +24,10 @@ public enum SecurityStatus : byte
     Detained,
     Paroled,
     Discharged,
-    // <Goob>
+    // <Trauma>
+    Brutalize,
     Search,
     Perma,
-    // </Goob>
-    Eliminated,
-    // <Trauma>
-    Brutalize
+    // </Trauma>
+    Eliminated
 }

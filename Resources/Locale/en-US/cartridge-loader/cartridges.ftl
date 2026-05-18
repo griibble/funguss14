@@ -103,7 +103,7 @@ wanted-list-unknown-reason-label = unknown reason
 wanted-list-initiator-label = [color=darkgray]Initiator:[/color] [color=white]{$initiator}[/color]
 wanted-list-unknown-initiator-label = unknown initiator
 
-#trauma - added search-brutalize
+# Trauma - added search-brutalize
 wanted-list-status-label = [color=darkgray]status:[/color] {$status ->
         [search] [color=#008080]search[/color]
         [perma] [color=#b18644]perma[/color]

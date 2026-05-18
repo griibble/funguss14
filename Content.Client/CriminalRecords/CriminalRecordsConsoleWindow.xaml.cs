@@ -324,9 +324,9 @@ public sealed partial class CriminalRecordsConsoleWindow : FancyWindow
             SecurityStatus.Brutalize => "hud_brutalize",
             SecurityStatus.Search => "hud_search",
             SecurityStatus.Perma => "hud_perma",
+            // </Trauma>
             SecurityStatus.Hostile => "hud_hostile",
             SecurityStatus.Eliminated => "hud_eliminated",
-            // </Trauma>
             _ => "SecurityIconNone"
         };
     }
