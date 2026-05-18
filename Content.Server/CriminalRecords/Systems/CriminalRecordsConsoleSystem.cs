@@ -170,9 +170,9 @@ public sealed partial class CriminalRecordsConsoleSystem : SharedCriminalRecords
             (_, SecurityStatus.Search) => "search",
             // Person should be beaten non-lethally
             (_, SecurityStatus.Brutalize) => "brutalize",
+            // </Trauma>
             (SecurityStatus.Hostile, SecurityStatus.None) => "not-hostile",
             (SecurityStatus.Eliminated, SecurityStatus.None) => "not-eliminated",
-            // </Trauma>
             // person is no longer sus
             (SecurityStatus.Suspected, SecurityStatus.None) => "not-suspected",
             // going from wanted to none, must have been a mistake
