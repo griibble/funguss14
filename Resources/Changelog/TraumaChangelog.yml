@@ -8957,3 +8957,10 @@ Entries:
   id: 1019
   time: '2026-05-23T01:46:25.0000000+00:00'
   url: https://github.com/Trauma-Station/Trauma-Station/pull/2742
+- author: TechnicFighter
+  changes:
+  - type: Fix
+    message: Fixed Contraband Tag on malign lawboard.
+  id: 1020
+  time: '2026-05-23T01:49:13.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/2741
