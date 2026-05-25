@@ -22,6 +22,7 @@
     soundHit:
       collection: MetalThud
   - type: PressureDamageChange
+    appliedModifier: 4 # Trauma - nerfing salvage gear onstation. Doubling modifier, halving base damage.
   - type: Wieldable
   - type: GunRequiresWield
   - type: UseDelayBlockMelee
@@ -144,13 +145,13 @@
   - type: MeleeWeapon
     damage:
       types:
-        Slash: 6
-        Blunt: 5
+        Slash: 3 # Trauma - was 6
+        Blunt: 3 # Trauma - was 5
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Slash: 4
-        Structural: 8
+        Slash: 2 # Trauma - was 4
+        Structural: 4 # Trauma - was 8
 
 - type: entity
   parent: [ BaseWeaponCrusher, BaseSalvageContraband ]
@@ -180,13 +181,13 @@
     wideAnimationRotation: -135
     damage:
       types:
-        Piercing: 5
-        Slash: 4
+        Piercing: 2 # Trauma - was 5
+        Slash: 2 # Trauma - was 4
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Piercing: 3
-        Structural: 8
+        Piercing: 2 # Trauma - was 3
+        Structural: 4 # Trauma - was 8
 
 - type: entity
   parent: [ BaseWeaponCrusher, BaseSalvageContraband ]
@@ -201,12 +202,12 @@
     attackRate: 0.6
     damage:
       types:
-        Blunt: 12
+        Blunt: 6 # Trauma - was 12
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Blunt: 13
-        Structural: 15 # Breaks weak rocks effectively
+        Blunt: 6 # Trauma - was 13
+        Structural: 8 # Trauma - was 15
   - type: Item
     size: Ginormous
     sprite: _Lavaland/Objects/Weapons/Crushers/crusher_hammer-inhands.rsi
@@ -237,14 +238,14 @@
     range: 2.2
     damage:
       types:
-        Slash: 6
-        Blunt: 5
+        Slash: 3 # Trauma - was 6
+        Blunt: 3 # Trauma - was 5
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Piercing: 3
-        Slash: 3
-        Structural: 15 # Breaks weak rocks effectively
+        Piercing: 2 # Trauma - was 3
+        Slash: 1 # Trauma - was 3
+        Structural: 7 # Trauma - was 15
 
 # Random upgrades
 - type: entity
