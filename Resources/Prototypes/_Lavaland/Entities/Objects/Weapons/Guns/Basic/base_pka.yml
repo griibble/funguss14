@@ -11,7 +11,7 @@
     shape:
     - 0,0,1,1
   - type: PressureDamageChange
-    appliedModifier: 3.75 # Trauma - Projectile damage nerf means max firerate PKA deals 24dps on-station
+    appliedModifier: 3.75 # Trauma
     applyToMelee: false
   - type: UpgradeableWeapon
   - type: ContainerContainer

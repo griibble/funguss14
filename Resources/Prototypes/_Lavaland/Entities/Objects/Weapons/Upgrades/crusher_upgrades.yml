@@ -134,7 +134,7 @@
   - type: WeaponUpgradeDamage
     bonusDamage:
       types:
-        Heat: 3 # Trauma - was 5.
+        Heat: 3 # Trauma - was 5
   - type: WeaponUpgradeEffects
     effects:
     - !type:Flammable
