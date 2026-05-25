@@ -22,7 +22,8 @@
     soundHit:
       collection: MetalThud
   - type: PressureDamageChange
-    appliedModifier: 4 # Trauma - nerfing salvage gear onstation. Doubling modifier, halving base damage.
+    appliedModifier: 4 # Trauma
+  - type: PressureEfficiency
   - type: Wieldable
   - type: GunRequiresWield
   - type: UseDelayBlockMelee

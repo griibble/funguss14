@@ -13,6 +13,7 @@
   - type: PressureDamageChange
     appliedModifier: 3.75 # Trauma
     applyToMelee: false
+  - type: PressureEfficiency
   - type: UpgradeableWeapon
   - type: ContainerContainer
     containers:
