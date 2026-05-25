@@ -17,7 +17,7 @@
         Slash: 12
   - type: PressureDamageChange
     lowerBound: 0
-    appliedModifier: 1.25
+    appliedModifier: 2.5 # Trauma - was 1.25
   - type: EmbeddableProjectile
     sound: /Audio/Weapons/star_hit.ogg
     offset: -0.15,0.0
@@ -25,7 +25,7 @@
   - type: DamageOtherOnHit
     damage:
       types:
-        Slash: 18
+        Slash: 9 # Trauma - was 18, now roughly on par with combat knife
   - type: DisarmMalus
     malus: 0.225
   - type: ThrowingAngle
@@ -69,7 +69,7 @@
     wideAnimationRotation: -135
     damage:
       types:
-        Slash: 7
+        Slash: 5 # Trauma - was 7
     soundHit:
       collection: AlienClaw
     angle: 30
@@ -79,7 +79,7 @@
     heavyStaminaCost: 4 # No skill?
   - type: PressureDamageChange
     lowerBound: 0
-    appliedModifier: 1.25
+    appliedModifier: 1.75 # Trauma - was 1.25. Same damage on lavaland
   - type: Sharp
   - type: Prying
   - type: UseDelay
@@ -118,7 +118,7 @@
     attackRate: 1.0
     damage:
       types:
-        Slash: 15
+        Slash: 10 # Trauma - was 15
     soundHit:
       collection: MetalThud
     angle: 0
@@ -127,7 +127,7 @@
   # TODO make it wearable on a belt/back slot
   - type: PressureDamageChange
     lowerBound: 0
-    appliedModifier: 1.25
+    appliedModifier: 1.75 # Trauma - was 1.25
   - type: Item
     size: Normal
     sprite: _Lavaland/Objects/Weapons/Secondary/kinetic_machete-inhands.rsi
