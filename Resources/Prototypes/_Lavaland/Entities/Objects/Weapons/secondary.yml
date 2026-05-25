@@ -70,7 +70,7 @@
     wideAnimationRotation: -135
     damage:
       types:
-        Slash: 5 # 7
+        Slash: 5 # was 7
     soundHit:
       collection: AlienClaw
     angle: 30
