@@ -146,13 +146,13 @@
   - type: MeleeWeapon
     damage:
       types:
-        Slash: 3 # was 6
-        Blunt: 3 # was 5
+        Slash: 3
+        Blunt: 3
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Slash: 2 # was 4
-        Structural: 4 # was 8
+        Slash: 2
+        Structural: 4
 
 - type: entity
   parent: [ BaseWeaponCrusher, BaseSalvageContraband ]
@@ -182,13 +182,13 @@
     wideAnimationRotation: -135
     damage:
       types:
-        Piercing: 2 # was 5
-        Slash: 2 # was 4
+        Piercing: 2
+        Slash: 2
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Piercing: 2 # was 3
-        Structural: 4 # was 8
+        Piercing: 2
+        Structural: 4
 
 - type: entity
   parent: [ BaseWeaponCrusher, BaseSalvageContraband ]
@@ -203,12 +203,12 @@
     attackRate: 0.6
     damage:
       types:
-        Blunt: 6 # was 12
+        Blunt: 6
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Blunt: 6 # was 13
-        Structural: 8 # was 15
+        Blunt: 6
+        Structural: 8
   - type: Item
     size: Ginormous
     sprite: _Lavaland/Objects/Weapons/Crushers/crusher_hammer-inhands.rsi
@@ -239,14 +239,14 @@
     range: 2.2
     damage:
       types:
-        Slash: 3 # was 6
-        Blunt: 3 # was 5
+        Slash: 3
+        Blunt: 3
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Piercing: 2 # was 3
-        Slash: 1 # was 3
-        Structural: 7 # was 15
+        Piercing: 2
+        Slash: 1
+        Structural: 7
 
 # Random upgrades
 - type: entity

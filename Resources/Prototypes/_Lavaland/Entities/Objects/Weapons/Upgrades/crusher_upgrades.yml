@@ -134,7 +134,7 @@
   - type: WeaponUpgradeDamage
     bonusDamage:
       types:
-        Heat: 3 # was 5
+        Heat: 3
   - type: WeaponUpgradeEffects
     effects:
     - !type:Flammable
@@ -164,7 +164,7 @@
   - type: WeaponUpgradeDamage
     bonusDamage:
       types:
-        Cold: 2 # was 4
+        Cold: 2
   - type: WeaponUpgradeEffects
     effects:
     - !type:AdjustTemperature
@@ -190,7 +190,7 @@
   - type: WeaponUpgradeDamage
     bonusDamage:
       types:
-        Slash: 4 # was 7
+        Slash: 4
   - type: Construction
     graph: CrusherUpgradeCrystalConstructionGraph
     node: crystal
